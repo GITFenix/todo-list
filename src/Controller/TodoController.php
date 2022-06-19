@@ -13,10 +13,10 @@ class TodoController
     public function getResponse(): JsonResponse
     {
         return new JsonResponse([
-            ['id' => 0, 'Clean windows'],
-            ['id' => 1, 'Make grocery'],
-            ['id' => 2, 'Wash dishes'],
-            ['id' => 4, 'Do the laundry'],
+            ['id' => 0, 'name' => 'Clean windows'],
+            ['id' => 1, 'name' => 'Make grocery'],
+            ['id' => 2, 'name' => 'Wash dishes'],
+            ['id' => 4, 'name' => 'Do the laundry'],
         ]);
     }
 }
