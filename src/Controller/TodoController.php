@@ -12,6 +12,11 @@ class TodoController
     #[Route('/', name: 'index')]
     public function getResponse(): JsonResponse
     {
-        return new JsonResponse('TEST');
+        return new JsonResponse([
+            ['id' => 0, 'Clean windows'],
+            ['id' => 1, 'Make grocery'],
+            ['id' => 2, 'Wash dishes'],
+            ['id' => 4, 'Do the laundry'],
+        ]);
     }
 }
